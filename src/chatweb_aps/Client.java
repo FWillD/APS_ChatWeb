@@ -100,7 +100,7 @@ public class Client extends JFrame implements ActionListener, KeyListener{
     
     //Método conectar fará a conexão do cliente com o Servidor Socket
     public void conectar() throws IOException{
-        
+        //socket = new Socket
         socket = new Socket(txtIP.getText(), Integer.parseInt(txtPorta.getText()));
         outputStr = socket.getOutputStream();
         outputWriter = new OutputStreamWriter(outputStr);
